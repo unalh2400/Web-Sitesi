@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Günümüz kutlu olsun ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Günümüz kutlu olsun ❤️</h1>
+    <p class="subtitle">Bir ömür her 14 Şubat'ı beraber kutlamak dileğiyle.</p>
+
+    <button onclick="surpriz()">Sürprizi Aç 💌</button>
+
+    <div id="mesaj" class="hidden">
+        <pre>
+while(alive) {
+   loveYou();
+} 💖
+        </pre>
+        <p>Öncelikle nasıl başlayacağımı bilemedim sonra kendimi gözlerini hayal ederek, gözlerinin
+             güzelliğine bıraktım ve yazmaya başladım. Sevgilim bugün 14 Şubat, bizim günümüz. 
+             Seni hâlâ ne kadar sevdiğimi anlatmak istesem de kelimeler kifayetsiz kalıyor. 
+             Ben seni şarkımızı duyunca duygulanacak, canın yandığında o yangın dinene kadar 
+             içim içimi yiyecek, sen her ağladığında ömrümden ömür gidecek kadar çok seviyorum. 
+             Bugün ilişkimizin tam 882. günü yani seni tam 884 gün önce ilk defa görmüşüm... 
+             İnanır mısın sevgilim, ben seni ilk gördüğümde nasıl aşık olduysam sana hâlâ 
+             aynı masumiyetle, aynı saflıkla aşığım ve sana aşık olmak benim için yaşadığım ve 
+             yaşayacağım en güzel his. <br><br>
+            <img src="Karım.jpg" alt="Bizim fotoğrafımız" class="ask-foto"><br><br> 
+            Senin gözlerine ilk baktığım an hissettiğim şey benim adeta kalbimi yönetiyordu, 
+            kendi kendime "Hayır aşık olmadın!" desem de nafile çoktan kalbim kalbine tutulmuştu,
+            sana düpedüz sırılsıklam aşık olmuştum ve o günden sonra hayatım eskisi gibi olmadı,
+            hayatım resmen baştan inşa edildi baştan kuruldu ve tam merkezinde sen vardın.
+            Artık hayatım daha güzel, daha huzur dolu, daha yaşanası ve en önemlisi seninle geçecekti. <br><br>
+            <img src="Karım1.jpg" alt="Bizim fotoğrafımız" class="ask-foto"><br><br>
+            Güzel kızım, elbette iyi-kötü, mutlu-üzgün, huzurlu-huzursuz günlerimiz olacaktır ancak
+            şunu asla unutma ki bu günlerin hepsinde ben yanındayım ve seni sevmeye devam ediyorum.
+            Ben seni çok seviyorum ve ömrümün her anında sevmeye devam edeceğim, bundan bir an bile
+            pişman olmadan. Sevgililer günümüz kutlu olsun. Seni her şeyden çok seven sevgilin. HSÜ
+        </p> 
+    </div>
+</div>
+
+<script>
+function surpriz() {
+    document.getElementById("mesaj").classList.remove("hidden");
+
+    var muzik = document.getElementById("arkaMuzik");
+    muzik.volume = 0.4;
+
+    muzik.play().catch(function(error) {
+        console.log("Müzik başlatılamadı:", error);
+    });
+}
+</script>
+
+<audio id="arkaMuzik" loop>
+    <source src="muzik.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
